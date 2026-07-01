@@ -97,7 +97,32 @@ function loadAssets(){
         sliceX:3,
         sliceY:3,
         anims:{
-            idle:{from:0,to:1,loop:true,speed:1}
+            idle:{from:0,to:1,loop:true,speed:1},
+            boom:{from:8,to:8}
+        }
+    })
+    loadSprite("alien2","sprites/spacesheet.png",{
+        sliceX:3,
+        sliceY:3,
+        anims:{
+            idle:{from:2,to:3,loop:true,speed:1},
+            boom:{from:8,to:8}
+        }
+    })
+    loadSprite("alien3","sprites/spacesheet.png",{
+        sliceX:3,
+        sliceY:3,
+        anims:{
+            idle:{from:4,to:5,loop:true,speed:1},
+            boom:{from:8,to:8}
+        }
+    })
+    loadSprite("ufo","sprites/spacesheet.png",{
+        sliceX:3,
+        sliceY:3,
+        anims:{
+            idle:{from:6,to:6},
+            boom:{from:8,to:8}
         }
     })
     loadSprite("ground","sprites/ground-tiled.png");
