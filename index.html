@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            margin:0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Game Island</h1>
+    <canvas id="canvas"></canvas>
+    <h5 id="fullscreen">Press 1 for fullscreen</h5>
+    <h5 id="devmode">Press 2 for dev mode</h5>
+</body>
+    <script>
+        canvas = document.getElementById("canvas");
+        window.onload = () => {
+            canvas.focus()
+        }
+    </script>
+    <script src="https://unpkg.com/kaboom@3000/dist/kaboom.js"></script>
+    <script src="kaboom/kaboom.js"></script>
+    <script src="loader.js"></script>
+    <script src="funkcije.js"></script>
+    <script src="scenes/island.js"></script>
+    <script src="script.js"></script>
+    <script src="scenes/mario.js"></script>
+    <script src="scenes/timergame.js"></script>
+    <script src="scenes/timergame2.js"></script>
+    <script src="scenes/spaceinvaders.js"></script>
+</html>
